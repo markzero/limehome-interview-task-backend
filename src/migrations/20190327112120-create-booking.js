@@ -17,8 +17,9 @@ module.exports = {
       city: {
         type: Sequelize.STRING
       },
-      userId: {
-        type: Sequelize.INTEGER
+      UserId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       }
     });
   },

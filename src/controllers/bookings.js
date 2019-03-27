@@ -8,4 +8,9 @@ router.get('/', asyncWrapper(async (req, res) => {
   res.send(bookings)
 }))
 
+router.post('/', asyncWrapper(async (req, res) => {
+  const booking = await bookingService.create(req.body)
+  res.send(booking)
+}))
+
 export default router
