@@ -3,7 +3,7 @@ const Booking = require('../models/index')['Booking']
 
 const UsersService = {
   async findBookings(id) {
-    return await Booking.findOne({ where: { UserId: id }})
+    return await Booking.findAll({ where: { UserId: id }})
   },
 }
 

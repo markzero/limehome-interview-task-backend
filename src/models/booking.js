@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     propertyId: DataTypes.STRING,
     propertyName: DataTypes.STRING,
     city: DataTypes.STRING,
+    booked: DataTypes.BOOLEAN,
   }, {});
   Booking.associate = function(models) {
     Booking.belongsTo(models.User)

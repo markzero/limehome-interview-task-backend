@@ -17,6 +17,9 @@ module.exports = {
       city: {
         type: Sequelize.STRING
       },
+      booked: {
+        type: Sequelize.BOOLEAN
+      },
       UserId: {
         type: Sequelize.INTEGER,
         allowNull: false
